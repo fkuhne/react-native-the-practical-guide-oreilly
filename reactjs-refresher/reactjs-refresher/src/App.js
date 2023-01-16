@@ -3,20 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
-  // In order to be a valid React component, this function
-  //  must return a JSX object
-  return <h1 title="this is a title">Hello World!</h1>
 
-  // this syntax above is the react way of adding elements to the DOM, like
-  // we would do in JS with:
-  //return React.createElement('h1', {title:"this is a title"}, "Hello World!")
-}
+  return <div>
+    <h2>Course Goals</h2>
+    <ul>
+      <li>Finish the course</li>
+      <li>Learn all about the Course Main Topic</li>
+      <li>Help other students in the Course Q&A</li>
+    </ul>
+  </div>
 
-// The above component can also be declared as a class, like this:
-class App2 extends React.Component {
-  render() {
-    return <h1 title="This works!">Hello World!</h1>
-  }
 }
 
 export default App;
